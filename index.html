@@ -7,10 +7,10 @@
 <body>
   This is login form for LoginChat.<br/>
   input your name.
-  <input type="text" id="name" style="width:200px;" />
+  <input type="text" id="name" value="" style="width:200px;" />
   <br/>
   input password.
-  <input type="text" id="pass" style="width:200px;" />
+  <input type="text" id="pass" value="" style="width:200px;" />
   <br/>
   <button onclick="goToChatApp();">goToChatApp</button>
   <button onclick="signup();">sign up</button>
@@ -32,7 +32,7 @@
     }
     
     function signup(){
-      var name = document.getElementById('name');
+      var name = document.getElementById('name').value;
       if(name == "") {
         alert('input your name');
         return;
@@ -46,7 +46,7 @@
     }
     
     function goToChatApp(){
-      document.location = './chat.html';
+      document.location = 'typingwar.trap.games';
     }
   </script>
 </body>

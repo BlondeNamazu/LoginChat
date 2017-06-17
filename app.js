@@ -9,6 +9,15 @@ var io = require("socket.io").listen(server);
 
 // ユーザ管理ハッシュ
 var userHash = {};
+var maxid = 0;
+var userList = {};
+var activeUserList = {};
+function User(name,pass,email){
+  this.id = maxid ++;
+  this.name = name;
+  this.pass = pass;
+  this.email = email;
+}
 
 // 2.イベントの定義
 io.sockets.on("connection", function (socket) {

@@ -1,0 +1,7 @@
+type: runtime
+image: runtime/node
+
+startup: npm install socket.io
+entrypoint: node app.js
+
+http_proxy: 8080

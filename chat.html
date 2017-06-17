@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Chat App</title>
-  <link id="csslink" rel="stylesheet" type="text/css" href="style0.css" media="all">
+  <!--<link id="csslink" rel="stylesheet" type="text/css" href="style0.css" media="all">-->
 </head>
 <body>
   <input type="text" id="msg_input" style="width:200px;" />
@@ -45,23 +45,23 @@
     addMessage("貴方は" + myName + "として入室しました");
     start(myName);
     
-    function changeUI(int type){
-      var li = $('#csslink');
-      switch(type){
-        case 0:{
-          li.attr('href','style0.css');
-          break;
-        }
-        case 1:{
-          li.attr('href','style1.css');
-          break;
-        }
-        default:{
-          console.log("stylescheet couldn't be read");
-          break;
-        }
-      }
-    }
+    // function changeUI(int type){
+    //   var li = $('#csslink');
+    //   switch(type){
+    //     case 0:{
+    //       li.attr('href','style0.css');
+    //       break;
+    //     }
+    //     case 1:{
+    //       li.attr('href','style1.css');
+    //       break;
+    //     }
+    //     default:{
+    //       console.log("stylescheet couldn't be read");
+    //       break;
+    //     }
+    //   }
+    // }
     
     
   </script>

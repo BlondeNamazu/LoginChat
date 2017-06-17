@@ -12,6 +12,7 @@
   input password.
   <input type="text" id="pass" style="width:200px;" />
   <br/>
+  <button onclick="goToChatApp();">goToChatApp</button>
   <button onclick="signup();">sign up</button>
   <script src="/socket.io/socket.io.js"></script>
   <!--<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
@@ -32,12 +33,12 @@
     
     function signup(){
       var name = document.getElementById('name');
-      if(!name) {
+      if(name == "") {
         alert('input your name');
         return;
       }
       var pass = document.getElementById('pass');
-      if(!pass) {
+      if(pass == "") {
         alert('input password');
         return;
       }

@@ -1,0 +1,17 @@
+{
+  "name": "loginchat",
+  "version": "0.0.0",
+  "description": "Node.jsでチャットアプリです。\r サンプルをちょくちょくいじくっただけ",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.trapti.tech:Namazu/LoginChat.git"
+  },
+  "author": "Namazu",
+  "license": "ISC"
+}

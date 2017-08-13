@@ -1,8 +1,14 @@
 // 1.モジュールオブジェクトの初期化
 var fs = require("fs");
 var server = require("http").createServer(function(req, res) {
-     res.writeHead(200, {"Content-Type":"text/html"});
-     var output = fs.readFileSync("./index.html", "utf-8");
+     var output;
+     if(~url.parse(req.url).pathname.indexOf('main')){
+       res.writeHead(200, {"Content-Type":"text/html"});
+       output = fs.readFileSync("./main.html", "utf-8");
+     } else {
+       res.writeHead(200, {"Content-Type":"text/html"});
+       output = fs.readFileSync("./index.html", "utf-8");
+     }
      res.end(output);
 }).listen(8080);
 var io = require("socket.io").listen(server);

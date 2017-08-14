@@ -4,7 +4,7 @@
   <title>Chat App</title>
   <!--<link id="csslink" rel="stylesheet" type="text/css" href="style0.css" media="all">-->
 </head>
-<body>
+<body onpageshow="Init()">
   <input type="text" id="msg_input" style="width:200px;" />
   <button onclick="publishMessage();">語る</button>
   <div id="msg"></div>
@@ -48,15 +48,10 @@
     
     var msgArea = document.getElementById("msg");
     var myName;
-    function DataReceive(){
-        //?以降の文字を取得する
-      myName = location.search.substring(1, location.search.length);
-        //エスケープされた文字をアンエスケープする
-      myName = unescape(myName);
+    function Init(){
       addMessage("貴方は" + myName + "として入室しました");
       start(myName);  
     }
-    window.onload = DataRecieve;
     
   </script>
 </body>

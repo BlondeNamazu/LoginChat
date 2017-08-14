@@ -49,30 +49,12 @@
     var myName;
     function DataReceive(){
         //?以降の文字を取得する
-      var myName = location.search.substring(1, location.search.length);
+      myName = location.search.substring(1, location.search.length);
         //エスケープされた文字をアンエスケープする
-      myName = unescape(myName);  
+      myName = unescape(myName);
+      start(myName);  
     }
     window.onload = DataRecieve;
-    
-    // function changeUI(int type){
-    //   var li = $('#csslink');
-    //   switch(type){
-    //     case 0:{
-    //       li.attr('href','style0.css');
-    //       break;
-    //     }
-    //     case 1:{
-    //       li.attr('href','style1.css');
-    //       break;
-    //     }
-    //     default:{
-    //       console.log("stylescheet couldn't be read");
-    //       break;
-    //     }
-    //   }
-    // }
-    
     
   </script>
 </body>

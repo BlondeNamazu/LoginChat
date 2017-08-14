@@ -37,11 +37,11 @@
         alert('input your name');
         return;
       }
-      var pass = document.getElementById('pass');
-      if(pass == "") {
-        alert('input password');
-        return;
-      }
+      // var pass = document.getElementById('pass');
+      // if(pass == "") {
+      //   alert('input password');
+      //   return;
+      // }
       socketio.emit("login",name,pass);
     }
     

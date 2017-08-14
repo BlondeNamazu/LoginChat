@@ -53,10 +53,10 @@
       myName = location.search.substring(1, location.search.length);
         //エスケープされた文字をアンエスケープする
       myName = unescape(myName);
+      addMessage("貴方は" + myName + "として入室しました");
+      start(myName);  
     }
-    DataRecieve();
-    addMessage("貴方は" + myName + "として入室しました");
-    start(myName);  
+    window.onload = DataRecieve;
     
   </script>
 </body>
